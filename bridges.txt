@@ -1,0 +1,42 @@
+Arch bridge
+Through arch bridge
+Beam bridge
+Log bridge
+Viaduct
+Cavity wall viaduct
+Bowstring arch
+Box girder bridge
+Cable-stayed bridge
+Cable-stayed suspension bridge hybrid
+Cantilever bridge
+Cantilever spar cable-stayed bridge
+Clapper bridge
+Covered bridge
+Girder bridge
+Continuous span girder bridge
+Integral bridge				
+Extradosed bridge
+Moon bridge
+Movable bridge
+Pigtail bridge
+Plate girder bridge
+Pontoon bridge
+Rigid-frame bridge
+Roving bridge
+Segmental bridge
+Self-anchored suspension bridge
+Side-spar cable-stayed bridge
+Simple suspension bridge
+Step-stone bridge
+Stressed ribbon bridge
+Suspension bridge
+Transporter bridge
+Trestle bridge
+Truss arch bridge
+Truss bridge
+Vierendeel bridge
+Brown truss
+Lattice truss bridge
+Tubular bridge
+Vlotbrug
+birds_and_bridges
