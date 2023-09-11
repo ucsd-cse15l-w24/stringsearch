@@ -39,4 +39,3 @@ Brown truss
 Lattice truss bridge
 Tubular bridge
 Vlotbrug
-birds_and_bridges
