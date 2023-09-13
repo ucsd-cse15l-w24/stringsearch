@@ -1,4 +1,7 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -17,6 +20,7 @@ class StringHandler implements URLHandler {
       if(query.startsWith("s=")) {
         String toAdd = query.split("=")[1];
         this.lines.add(toAdd);
+        this.log("/add?" + query);
         return String.format("%s added, there are now %s lines\n", toAdd, this.lines.size());
       }
       else {
@@ -26,6 +30,7 @@ class StringHandler implements URLHandler {
     else if(url.getPath().equals("/save")) {
       String toSave = String.join("\n", lines) + "\n";
       Files.write(Paths.get(this.path), toSave.getBytes());
+      this.log("/save");
       return "Saved!\n";
     }
     else if(url.getPath().equals("/search")) {
@@ -37,6 +42,7 @@ class StringHandler implements URLHandler {
             result += s + "\n";
           }
         }
+        this.log("/search?" + query);
         return result;
       }
       else {
@@ -45,6 +51,15 @@ class StringHandler implements URLHandler {
     }
     else {
       return String.join("\n", lines) + "\n";
+    }
+  }
+  void log(String s) {
+    try(FileWriter fw = new FileWriter("session.log", true);
+        BufferedWriter bw = new BufferedWriter(fw);
+        PrintWriter out = new PrintWriter(bw)) {
+        out.println(s);
+    } catch (IOException e) {
+        //exception handling left as an exercise for the reader
     }
   }
 }
