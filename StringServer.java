@@ -67,11 +67,11 @@ class StringHandler implements URLHandler {
 class StringServer {
   public static void main(String[] args) throws IOException {
     if(args.length == 0){
-      System.out.println("Missing port number! Try any number between 1024 to 49151");
+      System.out.println("Missing both port number and file path! For the first argument (port number), try any number between 1024 to 49151. For the second argument (file path), give a path to a text file.");
       return;
     }
     if(args.length == 1){
-      System.out.println("Missing file path! Give a path to a text file as the second argument.");
+      System.out.println("Missing port number or file path! For the first argument (port number), try any number between 1024 to 49151. For the second argument (file path), give a path to a text file.");
       return;
     }
 
