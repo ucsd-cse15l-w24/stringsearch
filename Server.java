@@ -49,7 +49,7 @@ public class Server {
 
         //start the server
         server.start();
-        System.out.println("Server started at http://" + InetAddress.getLocalHost().getHostName() + ":" + port);
-        System.out.println("(Or, if it's running locally on this computer, use http://localhost:" + port + " )");
+        System.out.println("Server started! Access on PrairieLearn through the 'ports' button next to the Terminal tab.");
+        System.out.println("Or, to access locally from a terminal on this computer, use http://localhost:" + port + " )");
     }
 }
